@@ -2,7 +2,7 @@
 
 App for exchanging currencies
 
-<img src="http://funkyimg.com/i/2DVuD.png">
+<img width="300" src="http://funkyimg.com/i/2DVuD.png">
 
 # Install and Run
 
