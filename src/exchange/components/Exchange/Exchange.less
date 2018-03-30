@@ -1,0 +1,43 @@
+@c: .Exchange;
+
+@{c} {
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+
+  &-rate {
+    color: #fff;
+  }
+
+  &-from {
+    display: flex;
+    flex-direction: column;
+    background: #286af2;
+    height: 60vh;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &-to {
+    display: flex;
+    flex-direction: column;
+    background: #2b60c2;
+    height: 40vh;
+  }
+
+  &-currencies {
+    flex: 1;
+  }
+}

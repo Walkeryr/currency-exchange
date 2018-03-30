@@ -1,0 +1,30 @@
+@c: .CurrencyRow;
+
+@{c} {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &-carousel {
+    height: 100%;
+
+    .carousel,
+    .slider-wrapper,
+    .slider {
+      height: 100%;
+    }
+
+    .carousel .slide {
+      background: none;
+    }
+  
+    .dot {
+      box-shadow: none !important;
+    }
+
+    .control-dots {
+      bottom: 30px;
+    }
+  }
+}

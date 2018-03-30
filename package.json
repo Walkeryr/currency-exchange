@@ -1,0 +1,45 @@
+{
+  "name": "currency_exchange",
+  "version": "1.0.0",
+  "description": "Currency exchange app",
+  "main": "index.js",
+  "author": "Yuriy Khamzyaev",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all --parallel dev:server dev:watch",
+    "dev:server": "browser-sync start -s -f index.html src data --no-ui --no-notify --single",
+    "dev:watch": "webpack -w -d",
+    "build": "webpack -p"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-responsive-carousel": "^3.1.33",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.23.3",
+    "css-loader": "^0.28.11",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "npm-run-all": "^4.1.2",
+    "postcss-loader": "^2.1.2",
+    "redux-logger": "^3.0.6",
+    "style-loader": "^0.20.3",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  }
+}

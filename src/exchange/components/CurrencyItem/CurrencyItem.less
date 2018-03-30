@@ -1,0 +1,76 @@
+@c: .CurrencyItem;
+
+@{c} {
+  display: flex;
+  height: 100%;
+  padding: 60px;
+
+  color: #fff;
+
+  &--amountNotAvailable {
+    @{c}-sign,
+    @{c}-input {
+      color: #f00;
+    }
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: left;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    text-align: right;
+  }
+
+  &-code {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+
+  &-currencySymbol {
+    font-size: 14px;
+  }
+
+  &-inputWrapper {
+    position: relative;
+  }
+
+  &-sign {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 42px;
+  }
+
+  &-input {
+    background: none;
+    border: none;
+    height: 60px;
+    line-height: 60px;
+    font-size: 42px;
+    color: #fff;
+    text-align: right;
+    width: 250px;
+  }
+
+  &-toValue {
+    height: 60px;
+    line-height: 60px;
+    font-size: 42px;
+    color: #fff;
+    text-align: right;
+  }
+}

@@ -1,0 +1,37 @@
+@c: .ButtonAction;
+
+@{c} {
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+
+  border: 1px solid #fff;
+  border-radius: 4px;
+
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+
+    @{c}-label {
+      opacity: 0.7;
+    }
+  }
+
+  &-label {
+    height: 100%;
+
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 40px;
+
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+}

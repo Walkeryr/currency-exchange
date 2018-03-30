@@ -1,0 +1,48 @@
+@c: .ActivityItem;
+
+@{c} {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  &-type {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+  }
+
+  &-icon {
+    width: 50px;
+    height: 50px;
+
+    line-height: 50px;
+    text-align: center;
+
+    border-radius: 50%;
+    background: #ccc;
+  }
+
+  &-message {
+    flex: 1;
+  }
+
+  &-amount {
+    width: 100px;
+  }
+
+  &-primaryAmount {
+    font-size: 18px;
+
+    @{c}-amountPrefix {
+      font-size: 14px;
+    }
+  }
+
+  &-secondaryAmount {
+    font-size: 16px;
+
+    @{c}-amountPrefix {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@c: .Balance;
+
+@{c} {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &-amounts {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-carousel {
+    .carousel {
+      overflow: visible;
+      width: 200px !important;
+    }
+
+    .slider-wrapper {
+      overflow: visible;
+    }
+
+    .control-dots {
+      bottom: -30px;
+    }
+
+    .carousel .slide {
+      background: none;
+    }
+  
+    .dot {
+      box-shadow: none !important;
+    }
+  }
+
+  &-controls {
+    margin-bottom: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
