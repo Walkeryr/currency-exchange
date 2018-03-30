@@ -52,9 +52,9 @@ class ExchangeContainer extends Component {
     this.setToCurrency(this.props);
 
     this.props.dispatch(fetchRates());
-    // this.ratesInterval = setInterval(() => {
-    // this.props.dispatch(fetchRates());
-    // }, 5 * 60 * 1000);
+    this.ratesInterval = setInterval(() => {
+      this.props.dispatch(fetchRates());
+    }, 10 * 1000);
   }
 
   componentWillReceiveProps(nextProps) {
