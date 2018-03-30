@@ -29,6 +29,7 @@ class Exchange extends Component {
 
     const balanceItem = currencies.filter(item => item.currencyCode === fromCurrency)[0];
     const isAmountAvailable = fromAmount <= balanceItem.amount;
+    const sameCurrency = fromCurrency === toCurrency;
 
     return (
       <div className="Exchange">
@@ -39,7 +40,7 @@ class Exchange extends Component {
               1{CURRENCIES[fromCurrency].symbol} = {currencyRate.toFixed(4)}
               {CURRENCIES[toCurrency].symbol}
             </div>
-            <Button disabled={!isAmountAvailable || !fromAmount} onClick={this.onExchange}>
+            <Button disabled={!isAmountAvailable || !fromAmount || sameCurrency} onClick={this.onExchange}>
               Exchange
             </Button>
           </div>
