@@ -35,7 +35,7 @@
     "less": "3.0.1",
     "less-loader": "4.1.0",
     "npm-run-all": "4.1.2",
-    "postcss-loader": "2.1.2",
+    "postcss-loader": "3.0.0",
     "redux-logger": "3.0.6",
     "style-loader": "0.20.3",
     "svg-inline-loader": "0.8.0",
